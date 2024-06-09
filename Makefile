@@ -1,4 +1,4 @@
-.PHONY: build
+.PHONY: build docker fmt fmt-check test release sbom
 
 build:
 	rustc -C target-feature=+crt-static src/main.rs -o rsd
