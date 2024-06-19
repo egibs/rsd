@@ -17,4 +17,13 @@ Cargo.lock
 rsd
 
 # in-repo SBOMs
-sbom.json
+sbom*.json
+
+# Melange
+packages/
+melange.rsa
+melange.rsa.pub
+
+# Apko
+
+rsd.tar

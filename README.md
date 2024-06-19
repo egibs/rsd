@@ -25,7 +25,7 @@ I've been writing YARA rules recently and knowing how to locate information like
 
 ## What works for now?
 
-- Building locally via `rustc` or via Dockerfile
+- Building locally via `rustc`, Docker, or Apko (via Melange)
 - ELF binaries
 
 ## Usage

@@ -1,0 +1,20 @@
+contents:
+  repositories:
+    - '@local packages'
+  keyring:
+    - melange.rsa.pub
+  packages:
+    - rsd@local
+
+entrypoint:
+  command: /usr/bin/rsd
+
+accounts:
+  groups:
+    - groupname: rsd
+      gid: 61924
+  users:
+    - username: rsd
+      uid: 61924
+
+archs: [aarch64, x86_64]
