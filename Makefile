@@ -1,5 +1,17 @@
 .PHONY: build docker fmt fmt-check test release sbom
 
+keygen:
+	melange keygen
+
+rsd-melange: keygen
+	melange build --arch arm64,x86_64 rsd.yaml --signing-key melange.rsa
+
+rsd-apko: rsd-melange
+	apko build rsd.apko.yaml rsd:latest rsd.tar
+
+rsd-docker:
+	docker load < rsd.tar
+
 build:
 	rustc -C target-feature=+crt-static src/main.rs -o rsd
 
