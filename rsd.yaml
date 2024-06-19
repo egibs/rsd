@@ -1,6 +1,6 @@
 package:
   name: rsd
-  version: 0.2.0
+  version: v0.3.0
   epoch: 0
   description: "Rust implemention of xxd -e -l 64"
   copyright:
@@ -24,7 +24,7 @@ pipeline:
   - uses: git-checkout
     with:
       repository: https://github.com/egibs/rsd
-      expected-commit: 9054b032b03a7680a697a0b199b97614010be7f0
+      tag: ${{package.version}}
 
   - runs: make build
 
