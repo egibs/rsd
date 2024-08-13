@@ -1,4 +1,4 @@
-FROM cgr.dev/chainguard/rust@sha256:7621e7a92f41ce191c032f5417f8910854e34488d42eff02129a7bc26e3d9d58 as build
+FROM cgr.dev/chainguard/rust@sha256:fc5f6925ba3745d2ad061a8e9e7125566eb1631101ae7bfe9a3f20daaff56524 as build
 
 WORKDIR /build
 
