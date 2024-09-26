@@ -33,7 +33,7 @@ jobs:
             uploads.github.com:443
       - uses: chainguard-dev/actions/setup-gitsign@e82b4e5ae10182af72972addcb3fedf7454621c8
       - name: Checkout repository
-        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332
+        uses: actions/checkout@d632683dd7b4114ad314bca15554477dd762a938
       - run: |
           curl https://sh.rustup.rs -sSf | sh -s -- -y
           export PATH="$HOME/.cargo/bin:$PATH"
