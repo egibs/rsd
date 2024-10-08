@@ -29,7 +29,7 @@ jobs:
             packages.microsoft.com:443
             sh.rustup.rs:443
             static.rust-lang.org:443
-      - uses: actions/checkout@d632683dd7b4114ad314bca15554477dd762a938
+      - uses: actions/checkout@eef61447b9ff4aafe5dcd4e0bbf5d482be7e7871
       - run: |
           curl https://sh.rustup.rs -sSf | sh -s -- --default-toolchain=${{ env.RUST_VERSION }} -y
           export PATH="$HOME/.cargo/bin:$PATH"
