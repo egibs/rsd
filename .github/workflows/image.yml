@@ -42,6 +42,7 @@ jobs:
       - run: |
           sudo apt -y update
           sudo apt -y install bubblewrap
+          sudo chmod u+s /usr/bin/bwrap
       - run: |
           make rsd-apko
           make rsd-docker
