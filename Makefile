@@ -4,7 +4,7 @@ keygen:
 	melange keygen
 
 rsd-melange: keygen
-	melange build --arch arm64,x86_64 rsd.yaml --signing-key melange.rsa
+	melange build --arch arm64,x86_64 rsd.yaml --signing-key melange.rsa --runner docker
 
 rsd-apko: rsd-melange
 	apko build rsd.apko.yaml rsd:latest rsd.tar
