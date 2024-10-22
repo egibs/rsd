@@ -4,7 +4,7 @@ keygen:
 	melange keygen
 
 rsd-melange: keygen
-	melange build --arch arm64,x86_64 rsd.yaml --signing-key melange.rsa
+	melange build --arch arm64,x86_64 rsd.yaml --signing-key melange.rsa --git-repo-url  https://github.com/egibs/rsd --git-commit 9e58fafed60dcc9e5068ccf00bebefd76649f658
 
 rsd-apko: rsd-melange
 	apko build rsd.apko.yaml rsd:latest rsd.tar
