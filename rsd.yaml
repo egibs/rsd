@@ -1,6 +1,6 @@
 package:
   name: rsd
-  version: v0.3.0
+  version: v0.4.0
   epoch: 0
   description: "Rust implemention of xxd -e -l 64"
   copyright:

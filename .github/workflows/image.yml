@@ -40,6 +40,10 @@ jobs:
           go install chainguard.dev/apko@latest
           go install chainguard.dev/melange@latest
       - run: |
+          sudo apt -y update
+          sudo apt -y install bubblewrap
+          sudo chmod u+s /usr/bin/bwrap
+      - run: |
           make rsd-apko
           make rsd-docker
       - run: |
